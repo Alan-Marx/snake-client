@@ -11,6 +11,11 @@ const connect = () => {
     console.log(data);
   });
 
+  connection.on('connect', () => {
+    console.log('The connection has been successfully established!');
+    connection.write('Name: ASM');
+  });
+
   return connection;
 };
 

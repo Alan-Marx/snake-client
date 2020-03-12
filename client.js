@@ -15,15 +15,6 @@ const connect = () => {
     console.log('The connection has been successfully established!');
     connection.write('Name: ASM');
   });
-
-  // connection.on('connect', () => {
-  //   setInterval(() => {
-  //     connection.write('Move: up')
-  //   }, 1050)
-  //   setInterval(() => {
-  //     connection.write('Move: right');
-  //   }, 2000)
-  // });
   
   return connection;
 };

@@ -16,20 +16,23 @@ const handleUserInput = (data) => {
   }
   if (data === 'w') {
     connection.write('Move: up');
-    console.log('up');
   }
   if (data === 'a') {
     connection.write('Move: left');
-    console.log('left');
   }
   if (data === 's') {
     connection.write('Move: down');
-    console.log('down');
   }
   if (data === 'd') {
     connection.write('Move: right');
-    console.log('right');
   }
+  if (data === 'f') {
+    connection.write('Say: BOO HOO!');
+  }
+  if (data === 'e') {
+    connection.write('Say: NOT TODAY!');
+  }
+  
 };
 
 module.exports = {
